@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const mongoose = require('mongoose');
 const cron = require('node-cron');
@@ -6,7 +8,7 @@ const Crypto = require('./models/Crypto');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://ratan123:123ratan@cluster0.p9ip0t4.mongodb.net/Konix';
+const MONGODB_URI = process.env.MONGODB_URI 
  
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('Connected to MongoDB'))
@@ -17,7 +19,7 @@ const COINS = ['bitcoin', 'matic-network', 'ethereum'];
 
 async function fetchCryptoData() {
     for (const coin of COINS) {
-      try {
+      try {d
         const response = await axios.get(`${COINGECKO_API}/coins/${coin}`);
         const { market_data } = response.data;
         
