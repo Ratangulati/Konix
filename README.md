@@ -1,5 +1,5 @@
 ```
-    Notion Page describing the Assignment Information: [here](https://koinx.notion.site/KoinX-Backend-Internship-Assignment-119da378a24380e79505e883cd798e1d)
+    Notion Page describing the Assignment Information: https://koinx.notion.site/KoinX-Backend-Internship-Assignment-119da378a24380e79505e883cd798e1d
 ```
 
 Task 2 Result
